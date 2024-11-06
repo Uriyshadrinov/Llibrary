@@ -63,9 +63,9 @@ class Program
     static void Main()
     {
         // Создание книг
-        Book book1 = new Book("Война и мир", "Лев Толстой", 1225);
-        Book book2 = new Book("Преступление и наказание", "Фёдор Достоевский", 671);
-        Book book3 = new Book("Мастер и Маргарита", "Михаил Булгаков", 480);
+        Book book1 = new Book("Питер Пен", " Джеймс Мэтью Барри", 224);
+        Book book2 = new Book("Малыш и Карлсон, который живёт на крыше", "Астрид Линдгрен", 192);
+        Book book3 = new Book("Чарли и шоколадная фабрика", "Роальд Даль", 208);
 
         // Создание библиотеки и добавление книг
         Library library = new Library();
@@ -81,7 +81,7 @@ class Program
         Console.WriteLine("\nВведите название книги для поиска:");
         string titleToFind = Console.ReadLine();
 
-        // Поиск книги по введённому названию
+        // Поиск книги по названию
         library.FindBook(titleToFind);
     }
 }
